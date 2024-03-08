@@ -14,6 +14,11 @@ body {
   --tertiary-color: #ff5400;
 }
 
+/* header styles */
+header {
+  max-width: 1170px;
+  margin: 0 auto;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -30,10 +35,12 @@ body {
   color: var(--tertiary-color);
 }
 nav {
-  margin-top: 52px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+}
+#large-screen {
+  margin-top: 50px;
 }
 nav ul {
   list-style: none;
@@ -54,5 +61,41 @@ nav ul {
 
 /* small screen navigation */
 #small-screen {
-  visibility: collapse;
+  display: none;
+}
+
+/* explore your travel section */
+.explore-container {
+  margin-top: 45px;
+  background: url(../Images/group13.png) no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  height: 501px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  position: relative;
+}
+.explore-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+}
+.explore-container h1 {
+  font-size: 64px;
+  font-weight: 800;
+  z-index: 1;
+}
+.explore-container p {
+  font-size: 16px;
+  line-height: 26px;
+  z-index: 1;
 }

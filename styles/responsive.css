@@ -126,4 +126,7 @@
   .services:nth-child(3) {
     grid-column: auto;
   }
+  .service-item {
+    padding: 20px;
+  }
 }

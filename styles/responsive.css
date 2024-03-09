@@ -1,17 +1,22 @@
 @media screen and (max-width: 576px) {
   /* shared styles */
   .form-container form,
-  .popular-tours-container {
+  .popular-tours-container,
+  .destination-img-container-1 {
     flex-direction: column;
   }
   .popular-tours-content h2,
-  .destination-container h2 {
+  .destination-container h2,
+  .why-choose-us-container h2 {
     font-size: 20px;
   }
-  .popular-tours-container,
-  .destination-container {
+  .popular-tours-container {
     padding: 0 20px;
     margin-top: 20px;
+  }
+  .destination-container h3 {
+    font-size: 20px;
+    font-weight: 700;
   }
 
   /* regular styles */
@@ -77,17 +82,39 @@
   .popular-tours-container img {
     width: 100%;
   }
-
   .popular-tours-content h2,
   .popular-tours-content p,
   .popular-tours-content ul li {
     padding-bottom: 10px;
   }
   /* Choose Your Destination */
+  .destination-container,
+  .why-choose-us-container {
+    padding: 0 20px;
+    margin-top: 20px;
+  }
   .destination-container {
     text-align: center;
   }
   .destination-container p {
     width: 100%;
+  }
+  /* Choose Your Destination */
+  .destination-img-container-1 {
+    gap: 24px;
+  }
+  .maldives,
+  .indonesia,
+  .destination-item img {
+    width: 100%;
+    height: 250px;
+    background-position: center;
+  }
+  .destination-img-container-2,
+  .destination-img-container-3 {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 24px;
   }
 }

@@ -182,3 +182,20 @@ select {
   padding-bottom: 24px;
   line-height: 26px;
 }
+/* Choose Your Destination */
+.destination-container {
+  margin-top: 100px;
+  text-align: center;
+}
+.destination-container h2 {
+  color: var(--primary-color);
+  font-size: 40px;
+  font-weight: 800;
+  padding-bottom: 24px;
+}
+.destination-container p {
+  max-width: 643px;
+  margin: 0 auto;
+  line-height: 26px;
+  padding-bottom: 24px;
+}

@@ -193,4 +193,17 @@
     font-size: 22px;
     font-weight: 800;
   }
+  /* footer */
+  footer {
+    padding: 0 20px;
+  }
+  .social-icons {
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  .copyright-text {
+    padding-top: 30px;
+    border-top: 1px solid rgb(214, 210, 210);
+    width: 100%;
+  }
 }

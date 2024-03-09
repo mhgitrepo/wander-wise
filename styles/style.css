@@ -471,3 +471,40 @@ iframe {
   font-size: 32px;
   font-weight: 800;
 }
+/* footer */
+footer {
+  margin-top: 100px;
+  background: rgba(19, 19, 24, 0.05);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+footer .logo img {
+  width: 40px;
+}
+footer .logo h2 {
+  font-size: 32px;
+}
+footer p {
+  color: var(--secondary-color);
+  max-width: 800px;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--secondary-color);
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 30px;
+}
+.copyright-text {
+  padding-top: 50px;
+  border-top: 1px solid rgb(214, 210, 210);
+  width: 870px;
+}

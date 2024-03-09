@@ -7,10 +7,11 @@
   }
   .popular-tours-content h2,
   .destination-container h2,
-  .why-choose-us-container h2 {
+  .why-choose-us-intro h2 {
     font-size: 20px;
   }
-  .popular-tours-container {
+  .popular-tours-container,
+  .why-choose-us-intro {
     padding: 0 20px;
     margin-top: 20px;
   }
@@ -114,7 +115,15 @@
   .destination-img-container-3 {
     margin-top: 24px;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     row-gap: 24px;
+  }
+  .why-choose-us-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .services:nth-child(3) {
+    grid-column: auto;
   }
 }

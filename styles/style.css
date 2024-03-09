@@ -23,22 +23,30 @@ body {
   font-weight: 600;
   cursor: pointer;
 }
-.destination-container {
+.destination-container,
+.why-choose-us-intro {
   margin-top: 100px;
   text-align: center;
 }
 .destination-container h2,
-.why-choose-us-container h2 {
+.why-choose-us-intro h2 {
   color: var(--primary-color);
   font-size: 40px;
   font-weight: 800;
   padding-bottom: 24px;
 }
-.destination-container p {
+.destination-container p,
+.why-choose-us-intro p {
   max-width: 643px;
   margin: 0 auto;
   line-height: 26px;
   padding-bottom: 24px;
+}
+.service-item-1,
+.service-item-2,
+.service-item-3 {
+  border-radius: 16px;
+  line-height: 26px;
 }
 
 /* header styles */
@@ -259,13 +267,47 @@ select {
 }
 /* why choose us */
 .why-choose-us-item {
-  /* display: grid; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 .services {
   display: flex;
   flex-direction: column;
   text-align: start;
 }
+.services:nth-child(3) {
+  grid-column: span 2;
+  justify-self: center;
+}
 .services img {
   width: 64px;
+}
+.service-item {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 573px;
+}
+.service-item h3 {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: 800;
+}
+.service-item-1 {
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+  border-radius: 16px;
+}
+.service-item-2 {
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+
+  line-height: 26px;
+}
+.service-item-3 {
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+  line-height: 26px;
 }

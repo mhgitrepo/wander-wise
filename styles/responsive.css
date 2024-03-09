@@ -2,18 +2,22 @@
   /* shared styles */
   .form-container form,
   .popular-tours-container,
-  .destination-img-container-1 {
+  .destination-img-container-1,
+  .perfect-place-container {
     flex-direction: column;
   }
   .popular-tours-content h2,
   .destination-container h2,
   .why-choose-us-intro h2,
-  .deals-and-discounts-intro h2 {
+  .deals-and-discounts-intro h2,
+  .perfect-place-content h2 {
     font-size: 20px;
   }
   .popular-tours-container,
   .why-choose-us-intro,
-  .deals-and-discounts-intro {
+  .deals-and-discounts-intro,
+  .perfect-place-container,
+  .newsletter-container {
     padding: 0 20px;
     margin-top: 20px;
   }
@@ -66,9 +70,9 @@
   .form-container form {
     gap: 10px;
   }
-  form input[type='text'],
-  form select,
-  form input[type='submit'] {
+  .form-container form input[type='text'],
+  .form-container form select,
+  .form-container form input[type='submit'] {
     border: 0;
     border-radius: 8px;
     padding: 16px 25px;
@@ -155,5 +159,38 @@
   .deals-item-content-p-wrap {
     display: grid;
     grid-template-columns: repeat(1, 1fr) 1fr;
+  }
+  /* A Simple Place */
+  .perfect-place-container {
+    gap: 20px;
+  }
+  iframe {
+    width: 23rem;
+    height: 200px;
+  }
+  /* newsletter */
+  .newsletter-form {
+    width: 100%;
+  }
+  .newsletter-container {
+    grid-template-columns: 1fr;
+  }
+  .newsletter-content h4 {
+    font-size: 20px;
+  }
+  .sponsor-tag {
+    background-position: center;
+  }
+  .coupon {
+    padding: 15px 25px;
+    right: 3px;
+    bottom: 30px;
+  }
+  .coupon h3 {
+    font-size: 16px;
+  }
+  .coupon p {
+    font-size: 22px;
+    font-weight: 800;
   }
 }

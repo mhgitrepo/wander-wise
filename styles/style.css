@@ -79,6 +79,7 @@ nav ul {
   margin-top: 45px;
   background: url(../Images/group13.png) no-repeat;
   background-size: cover;
+  /* background-position: center; */
   border-radius: 16px;
   height: 501px;
   color: #fff;

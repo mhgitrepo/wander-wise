@@ -24,19 +24,22 @@ body {
   cursor: pointer;
 }
 .destination-container,
-.why-choose-us-intro {
+.why-choose-us-intro,
+.deals-and-discounts-intro {
   margin-top: 100px;
   text-align: center;
 }
 .destination-container h2,
-.why-choose-us-intro h2 {
+.why-choose-us-intro h2,
+.deals-and-discounts-intro h2 {
   color: var(--primary-color);
   font-size: 40px;
   font-weight: 800;
   padding-bottom: 24px;
 }
 .destination-container p,
-.why-choose-us-intro p {
+.why-choose-us-intro p,
+.deals-and-discounts-intro p {
   max-width: 643px;
   margin: 0 auto;
   line-height: 26px;
@@ -310,4 +313,71 @@ select {
   border: 1px solid rgba(233, 68, 68, 0.2);
   background: rgba(233, 68, 68, 0.05);
   line-height: 26px;
+}
+/* Deals & Discounts */
+.deals-and-discounts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.deals-and-discounts {
+  padding: 0 20px;
+}
+.deals-item {
+  background: url(../images/sat-1.png) no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+  border-radius: 16px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 24px;
+  padding-right: 50px;
+}
+.deals-item-2 {
+  align-items: flex-start;
+  padding-right: 0px;
+  padding-left: 50px;
+  background: url(../images/sat-1-b.jpg) no-repeat;
+}
+.deals-item-content {
+  width: 480px;
+  height: 300px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(1px);
+  border-radius: 16px;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.deals-item-content i {
+  color: var(--tertiary-color);
+}
+.deals-item-content h3 {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: 800;
+}
+.deals-item-content p {
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.deals-item-content p i {
+  padding-right: 5px;
+}
+.deals-item-content-p-wrap {
+  display: flex;
+  gap: 24px;
+}
+#deal-price {
+  color: var(--tertiary-color);
+  font-size: 20px;
+  font-weight: 800;
 }

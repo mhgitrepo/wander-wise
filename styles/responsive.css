@@ -31,6 +31,27 @@
   }
   .explore-container p {
     font-size: 16px;
-    line-height: 14px;
+    line-height: 20px;
+    padding: 0 25px;
+  }
+  /* hero-form section */
+  .form-container {
+    width: 90%;
+  }
+  .form-container form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  form input[type='text'],
+  form select,
+  form input[type='submit'] {
+    border: 0;
+    border-radius: 8px;
+    padding: 16px 25px;
+    position: relative;
+    width: -webkit-fill-available;
+  }
+  #form-submit {
+    padding: 16px 25px;
   }
 }

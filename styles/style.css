@@ -13,6 +13,16 @@ body {
   --secondary-color: #424247;
   --tertiary-color: #ff5400;
 }
+.primary-btn {
+  background: var(--tertiary-color);
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
 
 /* header styles */
 header {
@@ -77,6 +87,7 @@ nav ul {
   flex-direction: column;
   justify-content: center;
   gap: 24px;
+
   position: relative;
 }
 .explore-container::before {
@@ -98,4 +109,46 @@ nav ul {
   font-size: 16px;
   line-height: 26px;
   z-index: 1;
+}
+/* hero-form section */
+.form-container {
+  z-index: 1;
+  margin: 0 auto;
+  width: 768px;
+}
+.form-container form {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+form input[type='text'],
+select,
+#form-submit {
+  border: 0;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px 25px;
+}
+form input:focus,
+select {
+  outline: none;
+}
+::placeholder,
+select {
+  color: rgba(19, 19, 24, 0.5);
+  font-size: 16px;
+}
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url(../Images/icons/down-arrow.svg);
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+}
+.primary-btn i {
+  margin-left: 5px;
 }

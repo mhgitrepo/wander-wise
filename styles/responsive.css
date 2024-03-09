@@ -82,6 +82,26 @@
   #form-submit {
     padding: 16px 25px;
   }
+  /* our travel partners */
+  .sponsors-container {
+    padding: 0 20px;
+  }
+  .sponsors-container h2 {
+    font-size: 20px;
+  }
+  .sponsors-container hr {
+    border: 0;
+  }
+  .sponsors-logo {
+    padding-top: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .sponsors-logo img {
+    padding: 0px 0;
+    width: 25%;
+  }
+
   /* popular-tours-section */
   .popular-tours-container {
     gap: 25px;

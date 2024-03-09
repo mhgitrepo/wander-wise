@@ -183,29 +183,34 @@ select {
 }
 
 /* popular-tours-section */
-.popular-tours-container {
+.popular-tours-container,
+.perfect-place-container {
   margin-top: 100px;
   display: flex;
   align-items: center;
   gap: 80px;
 }
-.popular-tours-content h2 {
+.popular-tours-content h2,
+.perfect-place-content h2 {
   color: var(--primary-color);
   font-size: 40px;
   font-weight: 800;
   padding-bottom: 24px;
 }
-.popular-tours-content p {
+.popular-tours-content p,
+.perfect-place-content p {
   color: var(--secondary-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
   padding-bottom: 24px;
 }
-.popular-tours-content ul {
+.popular-tours-content ul,
+.perfect-place-content ul {
   padding-left: 20px;
 }
-.popular-tours-content ul li {
+.popular-tours-content ul li,
+.perfect-place-content ul li {
   padding-bottom: 24px;
   line-height: 26px;
 }
@@ -320,9 +325,6 @@ select {
   flex-direction: column;
   gap: 24px;
 }
-.deals-and-discounts {
-  padding: 0 20px;
-}
 .deals-item {
   background: url(../images/sat-1.png) no-repeat;
   background-size: cover;
@@ -380,4 +382,11 @@ select {
   color: var(--tertiary-color);
   font-size: 20px;
   font-weight: 800;
+}
+/* A Simple Perfect Place to get Lost */
+.perfect-place-content ul li {
+  font-weight: 700;
+}
+iframe {
+  border-radius: 16px;
 }
